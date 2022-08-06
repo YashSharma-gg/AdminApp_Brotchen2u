@@ -5,6 +5,7 @@
 //import '../screens/cart_screen.dart';
 
 //import '../screens/edit_address_screen.dart';
+import 'package:admin_app/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:admin_app/screens/edit_carousel.dart';
 //import '../providers/auth.dart';
@@ -73,6 +74,15 @@ class _AppDrawerState extends State<AppDrawer> {
             onTap: () {
               Navigator.of(context)
                   .pushReplacementNamed(EditCarousel.routeName);
+            },
+          ),
+          const Divider(),
+          ListTile(
+            leading: const Icon(Icons.logout_outlined,),
+            title: const Text('Log Out'),
+            onTap: () {
+              Navigator.of(context)
+                  .pushReplacementNamed(LoginPage.routeName);
             },
           ),
           const Divider(),

@@ -1,3 +1,4 @@
+import 'package:admin_app/screens/login_screen.dart';
 import 'package:admin_app/screens/order_history_details.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:admin_app/screens/edit_carousel.dart';
@@ -62,14 +63,14 @@ class MyApp extends StatelessWidget {
           primaryColor: const Color(0xff3c5f84),
           indicatorColor:const Color(0xffe77805),
         ),
-        home: CategoriesScreen(),
+        home: LoginPage(),
         routes: {
           UserProductsScreen.routeName: (ctx) => UserProductsScreen(),
           EditProductsScreen.routeName: (ctx) => EditProductsScreen(),
           OrdersScreen.routeName: (ctx) => OrdersScreen(),
           EditCarousel.routeName: (ctx) => EditCarousel(),
           OrderHistoryDetails.routeName: (ctx) => OrderHistoryDetails(),
-
+          LoginPage.routeName : (ctx) => LoginPage(),
         },
       ),
     );
